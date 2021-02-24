@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item
+        android:id="@+id/private_chats"
+        android:enabled="true"
+        android:icon="@drawable/pri_chat_ico"
+        android:title="Private chat"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/public_chats"
+        android:enabled="true"
+        android:icon="@drawable/pub_chat_ico"
+        android:title="Public chat"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/profile_c"
+        android:enabled="true"
+        android:icon="@drawable/profile_ico"
+        android:title="Profile"
+        app:showAsAction="ifRoom"/>
+
+</menu>

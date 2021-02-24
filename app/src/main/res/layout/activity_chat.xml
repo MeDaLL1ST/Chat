@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/textmsg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="114dp"
+        android:stackFromBottom="true"
+        app:layout_constraintHorizontal_weight="1">
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="298dp"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="57dp"
+        android:layout_marginLeft="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/edittextmsg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/field"
+            android:hint="  Text"
+            android:paddingLeft="6dp"
+            android:textColor="#cc9900"
+            android:textColorHint="#cc9900" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="62dp"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="57dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageButton
+            android:id="@+id/sendmsg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ss"
+            android:src="@drawable/ic_send_but" />
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="1dp"
+        android:id="@+id/bottom_nav"
+        android:background="#EC6118"
+        app:itemIconTint="@drawable/nav_item1"
+        app:itemTextColor="@drawable/nav_item1"
+        app:menu="@menu/but_nav_main"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
